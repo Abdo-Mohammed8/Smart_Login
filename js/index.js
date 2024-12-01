@@ -122,7 +122,7 @@ function correctLoin(){
       document.getElementById("exist").innerHTML = `<p class="color-green">Success</p>`
 
       localStorage.setItem("userName",data[i].name)
-      pathTo('home.html');
+      location.pathname ='/smart_Login/home.html';
       break;
       
       }
@@ -185,24 +185,24 @@ function isValidPassword(inputValue){
 }
 
 function logout() {
-  pathTo('index.html')
+  location.pathname ='/smart_Login/index.html';
   localStorage.removeItem('userName');
 }
 
-function pathTo (str) {
+// function pathTo (str) {
 
 
 
-   location.pathname ='/Smart_Login/'+str;
+//    location.pathname ='/smart_Login/'+str;
  
 
-}
+// }
 function signUpPage(){
-  pathTo("signup.html")
+  location.pathname ='/smart_Login/signup.html';
 }
 
 function signInPage(){
-  pathTo("index.html")
+  location.pathname ='/smart_Login/index.html';
 }
 
 function clearInputs(){
