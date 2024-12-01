@@ -199,7 +199,7 @@ function logout() {
 function pathTo (str) {
 
   if (baseURL == '/') {
-    location.replace('https://' + location.hostname + '/'+str)
+    location.replace(location.origin + '/'+str)
   } 
   else {
     location.replace(baseURL + '/'+str)
@@ -220,3 +220,16 @@ function clearInputs(){
   password.value = "";
   userEmail.value = "";
 }
+
+// function www(){
+
+//   var loc = location.origin
+//   console.log(loc+'/nn');
+//   var path = loc[loc.length - 1];
+//   var nlo = 
+//   console.log(path);
+  
+  
+// }
+
+// www()
