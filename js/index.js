@@ -191,11 +191,11 @@ function logout() {
 
 
 function signUpPage(){
-  location.pathname ='/Smart_Login/signup.html';
+  location.pathname ='/Smart_Login/signup.html'
 }
 
 function signInPage(){
-  location.pathname ='/Smart_Login/index.html';
+  location.pathname ='/Smart_Login/index.html'
 }
 
 function clearInputs(){
