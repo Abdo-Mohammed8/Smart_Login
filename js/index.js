@@ -200,10 +200,7 @@ function pathTo (str) {
 
   if (baseURL == '/') {
 
-    var locPart = location.pathname.split("/")
-     locPart = locPart[1]
-    
-   location.replace(location.origin+'/'+locPart + '/'+str) 
+   location.replace('https://'+ location.pathname + '/'+str) 
   } 
   else {
     location.replace(baseURL + '/'+str)
