@@ -7,13 +7,6 @@ var userNameData = localStorage.getItem('userName');
 
 
 
-var path = location.pathname.split('/');
-
-var baseURL = ''
-for (var i = 0; i < path.length - 1; i++) {
-    baseURL += '/' + path[i];
-}
-
 if (userNameData){
   document.getElementById('home').innerHTML =`Welcome ${userNameData}` ;
 }
@@ -198,16 +191,12 @@ function logout() {
 
 function pathTo (str) {
 
-  if (baseURL == '/') {
+
 
    location.pathname ='/Smart_Login/'+str;
-  } 
-  else {
-    location.replace(baseURL + '/'+str)
+ 
 
- }
 }
-
 function signUpPage(){
   pathTo("signup.html")
 }
