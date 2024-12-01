@@ -122,7 +122,7 @@ function correctLoin(){
       document.getElementById("exist").innerHTML = `<p class="color-green">Success</p>`
 
       localStorage.setItem("userName",data[i].name)
-      location.pathname ='/Smart_Login/home.html';
+      location.pathname ='/login/home.html';
       break;
       
       }
@@ -185,17 +185,17 @@ function isValidPassword(inputValue){
 }
 
 function logout() {
-  location.pathname ='/Smart_Login/index.html';
+  location.pathname ='/login/index.html';
   localStorage.removeItem('userName');
 }
 
 
 function signUpPage(){
-  location.pathname ='/Smart_Login/signup.html'
+  location.pathname ='/login/signup.html'
 }
 
 function signInPage(){
-  location.pathname ='/Smart_Login/index.html'
+  location.pathname ='/login/index.html'
 }
 
 function clearInputs(){
