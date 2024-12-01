@@ -199,7 +199,11 @@ function logout() {
 function pathTo (str) {
 
   if (baseURL == '/') {
-    location.replace(location.origin + '/'+str)
+
+    var locPart = location.pathname.split("/")
+     locPart = locPart[1]
+    
+   location.replace(location.origin+'/'+locPart + '/'+str) 
   } 
   else {
     location.replace(baseURL + '/'+str)
@@ -212,7 +216,7 @@ function signUpPage(){
 }
 
 function signInPage(){
-  pathTo("index.html")
+  pathTo("")
 }
 
 function clearInputs(){
@@ -221,15 +225,6 @@ function clearInputs(){
   userEmail.value = "";
 }
 
-// function www(){
-
-//   var loc = location.origin
-//   console.log(loc+'/nn');
-//   var path = loc[loc.length - 1];
-//   var nlo = 
-//   console.log(path);
-  
-  
-// }
-
-// www()
+var locPart = location.pathname.split("/")
+     locPart = locPart[1]
+     console.log(locPart);
