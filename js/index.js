@@ -200,7 +200,7 @@ function pathTo (str) {
 
   if (baseURL == '/') {
 
-   location.replace( location.origin + location.pathname + '/'+str) 
+   location.replace( location.href + '/'+str) 
   } 
   else {
     location.replace(baseURL + '/'+str)
