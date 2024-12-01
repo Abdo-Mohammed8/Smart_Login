@@ -200,7 +200,7 @@ function pathTo (str) {
 
   if (baseURL == '/') {
 
-   location.replace( location.href + '/'+str) 
+   location.pathname ='/Smart_Login/'+str;
   } 
   else {
     location.replace(baseURL + '/'+str)
@@ -213,7 +213,7 @@ function signUpPage(){
 }
 
 function signInPage(){
-  pathTo("")
+  pathTo("index.html")
 }
 
 function clearInputs(){
